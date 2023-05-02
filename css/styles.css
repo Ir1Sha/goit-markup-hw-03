@@ -14,6 +14,7 @@
   --buttons-accent-background: #404bbf;
   --button-border-color: #e7e9fc;
   --brand-light-background: #f4f4fd;
+  --border-color: #e7e9fc;
 }
 
 .list {
@@ -28,6 +29,29 @@ body {
   font-family: 'Roboto', sans-serif;
   color: var(--text-color, slate);
   background-color: var(--brand-light-color);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.container {
+  width: 1158px;
+  border-bottom: solid var(--border-color) 1px;
 }
 
 /* ======Header====== */
@@ -110,7 +134,7 @@ body {
 }
 
 .modal-btn {
-  font-family: 'Roboto', sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
