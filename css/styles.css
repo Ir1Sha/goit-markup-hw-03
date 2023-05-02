@@ -1,0 +1,234 @@
+:root {
+  --brand-dark-color: #2e2f42;
+  --brand-light-color: #ffffff;
+  --text-color: #434455;
+  --logotype-color: #4d5ae5;
+  --dark-logo: #2e2f42;
+  --light-logo: #f4f4fd;
+  --footer-text-color: #f4f4fd;
+  --menu-link-color: #2e2f42;
+  --menu-links-accent: #404bbf;
+  --menu-buttons-text: #4d5ae5;
+  --buttons-text: #ffffff;
+  --modal-btn-background: #4d5ae5;
+  --buttons-accent-background: #404bbf;
+  --button-border-color: #e7e9fc;
+  --brand-light-background: #f4f4fd;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color, slate);
+  background-color: var(--brand-light-color);
+}
+
+/* ======Header====== */
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logotype-color);
+}
+/* ======Header====== */
+
+/* ======Components====== */
+
+.logo-theme-dark {
+  color: var(--dark-logo);
+}
+
+.logo-theme-light {
+  color: var(--light-logo);
+}
+
+.footer {
+  background-color: var(--brand-dark-color);
+}
+.footer-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--footer-text-color);
+}
+/* ======Components====== */
+
+/* ======Navigation====== */
+.menu-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--menu-link-color);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--menu-links-accent);
+}
+/* ======Navigation====== */
+
+/* ======Contact information====== */
+.contacts {
+  font-style: normal;
+}
+.contact-item,
+.contact-item {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+.contact-item:hover,
+.contact-item:focus {
+  color: var(--menu-links-accent);
+}
+
+/* ======Contact information====== */
+
+/* ======Main Hero Section====== */
+.main-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--brand-light-color);
+}
+
+.modal-btn {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: var(--buttons-text);
+  background-color: var(--modal-btn-background);
+  cursor: pointer;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  color: var(--buttons-text);
+  background: var(--buttons-accent-background);
+}
+
+.hero {
+  background-color: var(--brand-dark-color);
+}
+/* ======Main Hero Section====== */
+
+/* ===Main Features Section=== */
+.features-header {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--brand-dark-color);
+}
+
+.features-descr {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+/* ===Main Features Section=== */
+
+/* ===Main Projects Section */
+.main-projects-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--brand-dark-color);
+}
+/* ===Main Projects Section */
+
+/* ====== Main Team Section ====== */
+
+.team-section {
+  background-color: var(--brand-light-background);
+}
+
+.team-list-item {
+  background-color: var(--brand-light-color);
+}
+
+.team-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--brand-dark-color);
+}
+
+.team-members-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--brand-dark-color);
+}
+
+.team-member-descr {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* ====== Main Team Section====== */
+
+/* ====== Portfolio Section ====== */
+.button {
+  cursor: pointer;
+  border: 1px solid var(--button-border-color, cornflower);
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background: var(--brand-light-background);
+  color: var(--menu-buttons-text, iris);
+}
+
+.button:hover,
+.button:focus {
+  color: var(--buttons-text);
+  background: var(--buttons-accent-background);
+}
+
+.portfolio-projects-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--brand-dark-color);
+}
+
+.portfolio-projects-descr {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+/* ====== Portfolio  Section ====== */
