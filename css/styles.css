@@ -17,13 +17,7 @@
   --border-color: #e7e9fc;
 }
 
-.list {
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
-}
+/* ====== Components====== */
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -39,37 +33,25 @@ p {
   margin-bottom: 0;
 }
 
-img {
-  display: block;
-}
-
-ul {
+ul,
+ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
 }
 
+img {
+  display: block;
+}
+
 .container {
   width: 1158px;
   border-bottom: solid var(--border-color) 1px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-
-/* ======Header====== */
-
-.logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--logotype-color);
-}
-/* ======Header====== */
-
-/* ======Components====== */
 
 .logo-theme-dark {
   color: var(--dark-logo);
@@ -87,9 +69,62 @@ ul {
   letter-spacing: 0.02em;
   color: var(--footer-text-color);
 }
-/* ======Components====== */
 
-/* ======Navigation====== */
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+/* ====== /Components====== */
+
+/* ====== Header====== */
+
+.page-header {
+  display: flex;
+  align-items: center;
+}
+
+.page-header-container {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.logotype {
+  display: flex;
+  align-items: center;
+  margin-right: 76px;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logotype-color);
+}
+/* ====== /Header====== */
+
+/* ====== Navigation====== */
+
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+
 .menu-link {
   font-weight: 500;
   font-size: 16px;
@@ -102,9 +137,17 @@ ul {
 .menu-link:focus {
   color: var(--menu-links-accent);
 }
-/* ======Navigation====== */
+/* ====== /Navigation====== */
 
-/* ======Contact information====== */
+/* ====== Contact information====== */
+
+.contact-list {
+  display: flex;
+  align-items: center;
+  margin-left: 332px;
+  column-gap: 40px;
+}
+
 .contacts {
   font-style: normal;
 }
@@ -121,9 +164,9 @@ ul {
   color: var(--menu-links-accent);
 }
 
-/* ======Contact information====== */
+/* ====== /Contact information====== */
 
-/* ======Main Hero Section====== */
+/* ====== Main Hero Section====== */
 .main-title {
   font-weight: 700;
   font-size: 56px;
@@ -133,8 +176,17 @@ ul {
   color: var(--brand-light-color);
 }
 
+.main-title {
+  padding-top: 188px;
+  padding-left: 316px;
+  padding-right: 316px;
+}
+
 .modal-btn {
-  font-family: inherit;
+  min-width: 186px;
+  padding: 16px 32px 16px 32px;
+  border-radius: 4px;
+  margin: 48px 480px 188px 480px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -156,9 +208,9 @@ ul {
 .hero {
   background-color: var(--brand-dark-color);
 }
-/* ======Main Hero Section====== */
+/* ====== /Main Hero Section====== */
 
-/* ===Main Features Section=== */
+/* ====== Main Features Section=== */
 .features-header {
   font-style: normal;
   font-weight: 500;
@@ -172,9 +224,9 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-/* ===Main Features Section=== */
+/* ====== /Main Features Section=== */
 
-/* ===Main Projects Section */
+/* ====== Main Projects Section */
 .main-projects-header {
   font-weight: 700;
   font-size: 36px;
@@ -184,7 +236,7 @@ ul {
   text-transform: capitalize;
   color: var(--brand-dark-color);
 }
-/* ===Main Projects Section */
+/* ====== /Main Projects Section */
 
 /* ====== Main Team Section ====== */
 
@@ -220,7 +272,7 @@ ul {
   letter-spacing: 0.02em;
 }
 
-/* ====== Main Team Section====== */
+/* ====== /Main Team Section====== */
 
 /* ====== Portfolio Section ====== */
 .button {
@@ -255,4 +307,4 @@ ul {
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
-/* ====== Portfolio  Section ====== */
+/* ====== /Portfolio  Section ====== */
