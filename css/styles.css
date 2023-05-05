@@ -68,20 +68,28 @@ img {
 }
 
 .footer-container {
-  margin-bottom: 100px;
-  min-width: 264px;
-  max-width: 264px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer {
   background-color: var(--brand-dark-color);
-  padding-top: 100px;
+  padding-top: 100px 0;
 }
+
+.logo-footer-container {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
 .footer-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--footer-text-color);
   margin-top: 16px;
+  width: 264px;
 }
 
 .list {
@@ -132,6 +140,7 @@ img {
 .page-nav {
   display: flex;
   align-items: center;
+  column-gap: 76px;
 }
 
 .menu {
@@ -159,13 +168,14 @@ img {
 .contact-list {
   display: flex;
   align-items: center;
-  margin-left: 332px;
   column-gap: 40px;
 }
 
 .contacts {
   font-style: normal;
+  margin-left: auto;
 }
+
 .contact-item,
 .contact-item {
   font-size: 16px;
@@ -182,6 +192,15 @@ img {
 /* ====== /Contact information====== */
 
 /* ====== Main Hero Section====== */
+
+.hero-container {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 116px;
+}
+
 .main-title {
   font-weight: 700;
   font-size: 56px;
@@ -189,13 +208,16 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--brand-light-color);
+  max-width: 496px;
 }
 
 .modal-btn {
-  min-width: 186px;
+  min-width: 169px;
+  height: 56px;
   padding: 16px 32px 16px 32px;
   border-radius: 4px;
-  margin: 48px 480px 188px 480px;
+  margin-top: 48px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -206,6 +228,7 @@ img {
   color: var(--buttons-text);
   background-color: var(--modal-btn-background);
   cursor: pointer;
+  border: none;
 }
 
 .modal-btn:hover,
@@ -216,15 +239,15 @@ img {
 
 .hero {
   background-color: var(--brand-dark-color);
-  padding-top: 188px;
-  padding-left: 472px;
-  padding-right: 472px;
-  padding-bottom: 188px;
-  margin-bottom: 48px;
+  padding: 188px 0;
 }
 /* ====== /Main Hero Section====== */
 
 /* ====== Main Features Section=== */
+
+.features {
+  padding: 120px 0;
+}
 
 .features-hidden-header {
   position: absolute;
@@ -242,10 +265,15 @@ img {
 .features-section-list {
   display: flex;
   align-items: center;
-  column-gap: 30px;
+  column-gap: 24px;
+}
+
+.fetures-list-item {
+  width: calc((100%-72px) / 4);
 }
 
 .features-header {
+  margin-bottom: 8px;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -262,10 +290,8 @@ img {
 
 /* ====== Main Projects Section */
 
-.projects-section-list {
-  display: flex;
-  align-content: center;
-  gap: 24px;
+.projects-section {
+  padding-bottom: 120px;
 }
 
 .main-projects-header {
@@ -276,6 +302,13 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--brand-dark-color);
+  margin-bottom: 72px;
+}
+
+.projects-section-list {
+  display: flex;
+  align-content: center;
+  gap: 24px;
 }
 /* ====== /Main Projects Section */
 
@@ -283,6 +316,7 @@ img {
 
 .team-section {
   background-color: var(--brand-light-background);
+  padding: 120px 0;
 }
 
 .team-list-item {
@@ -297,31 +331,49 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--brand-dark-color);
+  margin-bottom: 72px;
 }
 
 .team-section-list {
   display: flex;
   align-content: center;
-  gap: 24px;
+  flex-basis: auto;
+  column-gap: 24px;
+}
+
+.team-member-item {
+  padding: 32px 16px;
 }
 
 .team-members-header {
   font-weight: 500;
   font-size: 20px;
+  text-align: center;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--brand-dark-color);
+  margin: 8px;
 }
 
 .team-member-descr {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 /* ====== /Main Team Section====== */
 
 /* ====== Portfolio Section ====== */
+
+.portfolio-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.filter-section-list {
+  padding-bottom: 72px;
+}
 
 .filter-hidden-header {
   position: absolute;
@@ -338,12 +390,14 @@ img {
 
 .filter-section-list {
   display: flex;
-  /* align-content: center; */
   justify-content: center;
-  gap: 24px;
+  column-gap: 24px;
 }
 
 .button {
+  height: 48px;
+  padding: 12px 24px 12px 24px;
+  border-radius: 4px;
   cursor: pointer;
   border: 1px solid var(--button-border-color, cornflower);
   border-radius: 4px;
@@ -364,8 +418,17 @@ img {
 
 .projects-list {
   display: flex;
+  align-items: center;
   column-gap: 24px;
+  row-gap: 48px;
   flex-wrap: wrap;
+  flex-basis: calc((100%-72px) / 3);
+}
+
+.app-item {
+  padding: 32px 16px;
+  border: 1px solid var(--border-color);
+  border-top: none;
 }
 
 .portfolio-projects-header {
@@ -374,6 +437,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--brand-dark-color);
+  margin-bottom: 8px;
 }
 
 .portfolio-projects-descr {
