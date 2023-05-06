@@ -118,6 +118,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logotype-color);
+  margin-right: 76px;
 }
 /* ====== /Header====== */
 
@@ -126,7 +127,6 @@ img {
 .page-nav {
   display: flex;
   align-items: center;
-  column-gap: 76px;
 }
 
 .menu {
